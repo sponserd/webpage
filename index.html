@@ -1,63 +1,237 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    
-<title>dj twig</title>    
-<meta name="viewport" content="width=device-width, initial-scale=1">
-    
-<link rel="stylesheet" type="text/css" href="style.css"
-      
-    </head>
-    
-<body style="background-color:black">
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>teague and tk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .container {
+    padding: 80px 120px;
+  }
+      .person:hover {border color: black;opacity: 0.7;
+      }
+    .carousel-inner img {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%); /* make all photos black and white */
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+}
 
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">I am dj twig</h1>
-    <p>And I'm a music producer</p>
+.carousel-caption h3 {
+  color: #fff !important;
+}
+
+@media (max-width: 600px) {
+  .carousel-caption {
+    display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
+  }
+}
+
+/* Add a dark background color to the footer */
+footer {
+  background-color: #2d2d30;
+  color: #f5f5f5;
+  padding: 32px;
+}
+
+footer a {
+  color: #f5f5f5;
+}
+
+footer a:hover {
+  color: #777;
+  text-decoration: none;
+}
+</style>
+      
+      
+   
+</head>
+    
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+       <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myCarousel">HOME</a></li>
+        <li><a href="#band">US</a></li>
+        <li><a href="#tour">COOL CAT</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    
+   <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="tk1.JPG" alt="New York">
+      <div class="carousel-caption">
+        <h3>New York</h3>
+        <p>The atmosphere in New York is lorem ipsum.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="W1.JPG" alt="Chicago">
+      <div class="carousel-caption">
+        <h3>sweven springes</h3>
+        <p>where i toght tk how to ski.</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="tk2.jpg" alt="Los Angeles">
+      <div class="carousel-caption">
+        <h3>pinapples</h3>
+        <p>are yummy</p>
+      </div>
+    </div>
+  </div>
+    
+    
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    
+    
+    <div id= "band">
+     <ul class="list-group">
+  <li class="list-group-item">shitsburgh <span class="label label-danger">Sold Out!</span></li>
+  <li class="list-group-item">japan <span class="label label-danger">Sold Out!</span></li>
+  <li class="list-group-item">jupitur <span class="badge">3</span></li>
+</ul>   
+        <div class="container text-center">
+  <h3>TEAGUE AND TK</h3>
+  <p><em>We love aSiA!</em></p>
+  <p>We have created SICK STUFF OF OUR FRIENDSHIP.</p>
+  <br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p><strong>TAKUMI</strong></p><br>
+      <a href="#demo1" data-toggle="collapse">
+        <img src="tk1.JPG"class="img-circle person"  alt="Random Name" width="95%" height="100%">
+     </a>
+      <div id="demo1" class="collapse">
+        <p>sick hype beast</p>
+        <p>Loves to do stupid shit in public</p>
+        <p>is super good at math</p>
+      </div>
+          </div>
+      
+    <div class="col-sm-4">
+      <p><strong>TEAGUE</strong></p><br>
+   <a href="#demo2" data-toggle="collapse">
+        <img src="W1.jpg" class="img-circle person"  alt="Random Name" 
+    width="95%" height="100%">
+      </a>
+      <div id="demo2" class="collapse">
+        <p>likes bikes</p>
+        <p>hates math</p>
+        <p>(◥▶ ͜つ◀◤) </p>
+      </div>
+       </div>
+    <div class="col-sm-4">    
+    </div>
   </div>
 </div>
-<font color="white">
-<div style="padding: 70px">
-   <p>I'm a young kid who like to make music on my computr.The thing that inspired me was looking at nature and hearing all the sounds making beats in my head.</p>
-    
-    <b><p> things to hire me for</p></b>
-    <ul>
-  <li>backing track</li>
-  <li>Bar and Batmitzah</li>
-  <li>school dances</li>
-</ul>
+        <div id= "tour">
+<div class="bg-1">
+  <div class="container">
+    <h3 class="text-center">cool cat </h3>
+    <p class="text-center">meeting places</p>
+
+    <ul class="list-group">
+      <li class="list-group-item">library </li>
+      <li class="list-group-item">jcc</li>
+      <li class="list-group-item">rite aid</li>
+    </ul>
+  </div>
 </div>
-    <div><iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/739930897&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe></div>
-<div class="container">
-  <form action="action_page.php">
+        </div>
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="country">Country</label>
-    <select id="country" name="country">
-<option value= "south carlina">south carolina</option>
-      <option value="pensilvana">pennylvania</option>
-    </select>
- 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
-    <div class="parallax"></div>
-
-<div style="height:1000px;background-color:red;font-size:36px">
-    
-</font>
-</body>
-</html>
+        <div id= "contact">
+   <div class="container">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We love our asia!</em></p>
+  <div class="row test">
+    <div class="col-md-4">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>shitburgh, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +001616162386720<p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> 
+        </div>
 
    
 
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>Bootstrap Theme Made with love by teague MTB yt  <a href="https://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools"></a></p>
+</footer>
+
+
+
+    
+    </body>
+</html>
